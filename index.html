@@ -13,10 +13,15 @@
       color: #ffffff;
       line-height: 1.6;
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     header {
       text-align: center;
       padding: 50px 20px 20px 20px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideUp 1s forwards;
+      animation-delay: 0.3s;
     }
     header h1 {
       font-size: 3em;
@@ -28,7 +33,11 @@
       font-size: 1.5em;
       font-weight: 400;
       color: #dddddd;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1em;
+      color: #cccccc;
     }
     .content {
       max-width: 900px;
@@ -41,19 +50,19 @@
       padding-top: 20px;
     }
     .section h3 {
-      color: #ff5555; /* red headings for sections */
+      color: #ff5555;
       margin-bottom: 10px;
     }
     .section ul {
       padding-left: 20px;
     }
     .discord-link {
-      color: #0096ff; /* blue clickable link */
+      color: #0096ff;
       text-decoration: underline;
     }
     .continue-btn {
       display: block;
-      width: 200px;
+      width: 220px;
       margin: 40px auto 0 auto;
       padding: 15px;
       text-align: center;
@@ -64,54 +73,63 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      transition: transform 0.2s, background-color 0.2s;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: transform 0.3s, background-color 0.2s, opacity 0.3s;
     }
     .continue-btn:hover {
-      transform: scale(1.05);
+      transform: translateY(0) scale(1.05);
       background-color: #ff2222;
+    }
+
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
   <!-- Click sound -->
-  <audio id="clickSound" src="https://www.myinstants.com/media/sounds/click.mp3" preload="auto"></audio>
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
 
   <header>
-    <h1>ZenoMoz Hub</h1>
-    <h2>Guides & Tips</h2>
-    <p>Welcome to ZenoMoz Hub! Made by <strong>SkyeMozScriptz</strong></p>
+    <h1>✨ ZenoMoz Hub ✨</h1>
+    <h2>Guides & Tips 📚</h2>
+    <p>Welcome to ZenoMoz Hub! Made by <strong>SkyeMozScriptz</strong> 🚀</p>
   </header>
 
   <div class="content">
     <div class="section">
       <p>─────────────────────────────────────────────</p>
-      <p>Hello, fellow scripters and Roblox adventurers!</p>
-      <p>You’ve just entered ZenoMoz Hub, your ultimate resource for learning, sharing, and exploring the world of Roblox scripting safely and responsibly. Whether you’re a beginner looking to understand the basics or an experienced developer wanting to level up your scripting game, this hub is designed to give you the tools, tips, and community support you need.</p>
+      <p>Hello, fellow scripters and Roblox adventurers! 🎮</p>
+      <p>You’ve just entered ZenoMoz Hub, your ultimate resource for learning, sharing, and exploring the world of Roblox scripting safely and responsibly. Whether you’re a beginner looking to understand the basics or an experienced developer wanting to level up your scripting game, this hub is designed to give you the tools, tips, and community support you need. 💡</p>
       <p>─────────────────────────────────────────────</p>
     </div>
 
     <div class="section">
-      <h3>How to Use Executors:</h3>
+      <h3>How to Use Executors 🛠️:</h3>
       <ol>
         <li><strong>Choosing an Executor:</strong>
           <ul>
             <li>Executors are tools that allow you to run custom Roblox scripts safely.</li>
             <li>Popular executors include Synapse X, Krnl, Script-Ware, and Fluxus.</li>
-            <li>Always download executors from official sources to avoid malware.</li>
+            <li>Always download executors from official sources to avoid malware. ⚠️</li>
             <li>Keep executors updated for Roblox compatibility.</li>
           </ul>
         </li>
         <li><strong>Installing Scripts:</strong>
           <ul>
             <li>Open your executor interface to paste or load scripts.</li>
-            <li>Copy trusted scripts (like from ZenoMoz Hub!).</li>
-            <li>Paste and hit “Execute” or “Run.”</li>
+            <li>Copy trusted scripts (like from ZenoMoz Hub!). 📄</li>
+            <li>Paste and hit “Execute” or “Run.” ✅</li>
           </ul>
         </li>
         <li><strong>Safety Tips:</strong>
           <ul>
             <li>Never run scripts from untrusted sources.</li>
-            <li>Avoid scripts asking for personal info or account details.</li>
+            <li>Avoid scripts asking for personal info or account details. 🔒</li>
             <li>Back up your account and important data.</li>
             <li>Use separate Roblox accounts for testing scripts.</li>
           </ul>
@@ -120,29 +138,39 @@
     </div>
 
     <div class="section">
-      <h3>Script Suggestions:</h3>
+      <h3>Script Suggestions 💻:</h3>
       <ul>
-        <li>Speed scripts</li>
-        <li>Admin commands</li>
-        <li>Fun GUI scripts</li>
-        <li>Game-specific scripts</li>
-        <li>Learning scripts</li>
+        <li>Infinite Yield</li>
+        <li>Speed Hub</li>
+        <li>Ice Hub</li>
+        <li>Reds Hub</li>
+        <li>and more… ✨</li>
       </ul>
     </div>
 
     <div class="section">
-      <h3>Community and Suggestions:</h3>
+      <h3>Community & Servers 🌐:</h3>
       <ul>
-        <li>ZenoMoz Hub is community-driven! Share ideas, suggestions, or scripts.</li>
-        <li>Discuss scripting techniques, executor compatibility, best practices.</li>
-        <li>Respect users: no malicious hacking or account exploitation.</li>
-        <li>Post tutorials, guides, or your own custom scripts.</li>
-        <li>Ask questions! Everyone starts somewhere.</li>
+        <li># official-scripts</li>
+        <li># get-n-share-scripts</li>
+        <li># other</li>
+        <li># find-a-script</li>
+        <li># script-reviews</li>
+        <li># leaked-scripts</li>
+        <li># tools-n-utilities</li>
+        <li># keyless-scripts</li>
+        <li># early-access</li>
+        <li>ADVERTISE YOUR MEDIA</li>
+        <li>key, COMMUNITY ZONE</li>
+        <li>media-drop</li>
+        <li>meme-dump</li>
+        <li># script-showoff</li>
+        <li>game-flex-zone</li>
       </ul>
     </div>
 
     <div class="section">
-      <h3>Discord Info:</h3>
+      <h3>Discord Info 📨:</h3>
       <p>Join our Discord server to stay updated!</p>
       <ul>
         <li>Server Name: ZenoMoz Hub Community</li>
@@ -160,35 +188,36 @@
     </div>
 
     <div class="section">
-      <h3>Final Notes:</h3>
-      <p>ZenoMoz Hub is more than scripts; it’s a community. Experiment, learn, and share safely.</p>
+      <h3>Final Notes 📝:</h3>
+      <p>ZenoMoz Hub is more than scripts; it’s a community. Experiment, learn, and share safely. 💖</p>
       <p>Created with ❤️ by SkyeMozScriptz</p>
       <p>─────────────────────────────────────────────</p>
     </div>
 
-    <button class="continue-btn" onclick="playClickAndRedirect()">
-      Continue
+    <button class="continue-btn">
+      Continue 🚀
     </button>
   </div>
 
   <script>
     const clickSound = document.getElementById('clickSound');
+    const continueBtn = document.querySelector('.continue-btn');
 
-    function playClickAndRedirect() {
+    // Slide up animation for button
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        continueBtn.style.opacity = 1;
+        continueBtn.style.transform = 'translateY(0)';
+      }, 1200); // after header animation
+    });
+
+    // Click sound + redirect
+    continueBtn.addEventListener('click', () => {
       clickSound.currentTime = 0;
       clickSound.play();
       setTimeout(() => {
         window.location.href = 'https://hyper-denzeno-moz-collab.vercel.app/';
-      }, 200); // slight delay so sound plays
-    }
-
-    // Optional: make all buttons play sound
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        clickSound.currentTime = 0;
-        clickSound.play();
-      });
+      }, 200);
     });
   </script>
 </body>
