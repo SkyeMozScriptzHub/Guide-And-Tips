@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZenoMoz Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 1.5em;
+      font-weight: 400;
+      color: #dddddd;
+      margin-bottom: 30px;
+    }
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 20px 50px 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+    }
+    .section h3 {
+      color: #ff5555; /* red headings for sections */
+      margin-bottom: 10px;
+    }
+    .section ul {
+      padding-left: 20px;
+    }
+    .discord-link {
+      color: #0096ff; /* blue clickable link */
+      text-decoration: underline;
+    }
+    .continue-btn {
+      display: block;
+      width: 200px;
+      margin: 40px auto 0 auto;
+      padding: 15px;
+      text-align: center;
+      background-color: #ff4444;
+      color: #fff;
+      font-size: 1.2em;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .continue-btn:hover {
+      transform: scale(1.05);
+      background-color: #ff2222;
+    }
+  </style>
+</head>
+<body>
+  <!-- Click sound -->
+  <audio id="clickSound" src="https://www.myinstants.com/media/sounds/click.mp3" preload="auto"></audio>
+
+  <header>
+    <h1>ZenoMoz Hub</h1>
+    <h2>Guides & Tips</h2>
+    <p>Welcome to ZenoMoz Hub! Made by <strong>SkyeMozScriptz</strong></p>
+  </header>
+
+  <div class="content">
+    <div class="section">
+      <p>─────────────────────────────────────────────</p>
+      <p>Hello, fellow scripters and Roblox adventurers!</p>
+      <p>You’ve just entered ZenoMoz Hub, your ultimate resource for learning, sharing, and exploring the world of Roblox scripting safely and responsibly. Whether you’re a beginner looking to understand the basics or an experienced developer wanting to level up your scripting game, this hub is designed to give you the tools, tips, and community support you need.</p>
+      <p>─────────────────────────────────────────────</p>
+    </div>
+
+    <div class="section">
+      <h3>How to Use Executors:</h3>
+      <ol>
+        <li><strong>Choosing an Executor:</strong>
+          <ul>
+            <li>Executors are tools that allow you to run custom Roblox scripts safely.</li>
+            <li>Popular executors include Synapse X, Krnl, Script-Ware, and Fluxus.</li>
+            <li>Always download executors from official sources to avoid malware.</li>
+            <li>Keep executors updated for Roblox compatibility.</li>
+          </ul>
+        </li>
+        <li><strong>Installing Scripts:</strong>
+          <ul>
+            <li>Open your executor interface to paste or load scripts.</li>
+            <li>Copy trusted scripts (like from ZenoMoz Hub!).</li>
+            <li>Paste and hit “Execute” or “Run.”</li>
+          </ul>
+        </li>
+        <li><strong>Safety Tips:</strong>
+          <ul>
+            <li>Never run scripts from untrusted sources.</li>
+            <li>Avoid scripts asking for personal info or account details.</li>
+            <li>Back up your account and important data.</li>
+            <li>Use separate Roblox accounts for testing scripts.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h3>Script Suggestions:</h3>
+      <ul>
+        <li>Speed scripts</li>
+        <li>Admin commands</li>
+        <li>Fun GUI scripts</li>
+        <li>Game-specific scripts</li>
+        <li>Learning scripts</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Community and Suggestions:</h3>
+      <ul>
+        <li>ZenoMoz Hub is community-driven! Share ideas, suggestions, or scripts.</li>
+        <li>Discuss scripting techniques, executor compatibility, best practices.</li>
+        <li>Respect users: no malicious hacking or account exploitation.</li>
+        <li>Post tutorials, guides, or your own custom scripts.</li>
+        <li>Ask questions! Everyone starts somewhere.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Discord Info:</h3>
+      <p>Join our Discord server to stay updated!</p>
+      <ul>
+        <li>Server Name: ZenoMoz Hub Community</li>
+        <li>Invite Link: <a class="discord-link" href="https://discord.gg/uzdBtY2BYf" target="_blank">https://discord.gg/uzdBtY2BYf</a></li>
+        <li>Channels Include:
+          <ul>
+            <li>#announcements</li>
+            <li>#scripts</li>
+            <li>#help</li>
+            <li>#general</li>
+            <li>#suggestions</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Final Notes:</h3>
+      <p>ZenoMoz Hub is more than scripts; it’s a community. Experiment, learn, and share safely.</p>
+      <p>Created with ❤️ by SkyeMozScriptz</p>
+      <p>─────────────────────────────────────────────</p>
+    </div>
+
+    <button class="continue-btn" onclick="playClickAndRedirect()">
+      Continue
+    </button>
+  </div>
+
+  <script>
+    const clickSound = document.getElementById('clickSound');
+
+    function playClickAndRedirect() {
+      clickSound.currentTime = 0;
+      clickSound.play();
+      setTimeout(() => {
+        window.location.href = 'https://hyper-denzeno-moz-collab.vercel.app/';
+      }, 200); // slight delay so sound plays
+    }
+
+    // Optional: make all buttons play sound
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+      });
+    });
+  </script>
+</body>
+</html>
